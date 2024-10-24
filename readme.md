@@ -53,10 +53,8 @@ This utility addresses these issues by:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/audio-file-rtl-reversal.git
+git clone https://github.com/z33v/zutils/audio-file-rtl-reversal.git
 
-# Install dependencies
-pip install mutagen tqdm
 ```
 
 ## Usage
