@@ -53,7 +53,7 @@ This utility addresses these issues by:
 
 ```bash
 # Clone the repository
-git clone https://github.com/z33v/zutils/tree/main/id3-rtl-fix
+git clone https://github.com/z33v/zutils
 
 # Install dependencies (Optional, software can sort by itself)
 pip install mutagen tqdm
