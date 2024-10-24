@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 """
 Audio File RTL Script Reversal
 -----------------------------
@@ -11,13 +10,22 @@ Copyright (c) 2024 Audio File RTL Reversal Contributors
 """
 
 import sys
+import os
 import argparse
 from pathlib import Path
+
+# First, import our library checker
+from rtl_utils.library_checker import ensure_libraries_installed
+
+# Ensure required libraries are installed before importing them
+ensure_libraries_installed()
+
+# Now we can safely import external libraries
 from mutagen import File
 from mutagen.easyid3 import EasyID3
 from tqdm import tqdm
 
-from rtl_utils.library_checker import ensure_libraries_installed
+# Import the rest of our utilities
 from rtl_utils.text_processor import reverse_rtl_parts
 from rtl_utils.file_utils import create_backup, restore_from_backup
 from rtl_utils.tag_mappings import TAG_MAPPINGS
