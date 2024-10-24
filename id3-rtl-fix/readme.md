@@ -53,9 +53,9 @@ This utility addresses these issues by:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/audio-file-rtl-reversal.git
+git https://github.com/z33v/zutils/tree/main/id3-rtl-fix
 
-# Install dependencies
+# Install dependencies (Optional, software can sort by itself)
 pip install mutagen tqdm
 ```
 
@@ -64,19 +64,19 @@ pip install mutagen tqdm
 Basic usage:
 ```bash
 # Reverse RTL scripts in filenames
-./audio_file_rtl_reversal.py --reverse-rtl /path/to/folder
+./id3-rtl-fix.py --reverse-rtl /path/to/folder
 
 # Reverse RTL scripts in tags
-./audio_file_rtl_reversal.py --reverse-tags /path/to/folder
+./id3-rtl-fix.py --reverse-tags /path/to/folder
 
 # Remove string from filenames and reverse RTL scripts
-./audio_file_rtl_reversal.py --remove "string_to_remove" --reverse-rtl --reverse-tags /path/to/folder
+./id3-rtl-fix.py --remove "string_to_remove" --reverse-rtl --reverse-tags /path/to/folder
 
 # Test changes without applying them
-./audio_file_rtl_reversal.py --dry-run --reverse-rtl --reverse-tags /path/to/folder
+./id3-rtl-fix.py --dry-run --reverse-rtl --reverse-tags /path/to/folder
 
 # Create backups before processing
-./audio_file_rtl_reversal.py --backup-dir ./backups --reverse-rtl --reverse-tags /path/to/folder
+./id3-rtl-fix.py --backup-dir ./backups --reverse-rtl --reverse-tags /path/to/folder
 ```
 
 ## Example Output
